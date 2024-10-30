@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar o Cancelar Citas</title>
+    <link rel="stylesheet" href="css/agendapaciente.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agendar o Cancelar Citas</h1>
+            <div class="menu">
+                <a href="perfil_paciente.html">Volver al Perfil</a>
+            </div>
+        </header>
+
+        <section class="schedule-appointment">
+            <h2>Agendar Nueva Cita</h2>
+            <form id="appointmentForm">
+                <label for="psychologist">Psicólogo:</label>
+                <select id="psychologist" name="psychologist" required>
+                    <option value="" disabled selected>Seleccione un psicólogo</option>
+                    <!-- Ejemplo de opciones de psicólogos -->
+                    <option value="Dr. Juan Pérez">Dr. Juan Pérez</option>
+                    <option value="Dra. María Gómez">Dra. María Gómez</option>
+                    <option value="Dr. Carlos Rodríguez">Dr. Carlos Rodríguez</option>
+                </select>
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit" class="btn">Agendar Cita</button>
+            </form>
+        </section>
+
+        <section class="cancel-appointment">
+            <h2>Citas Programadas</h2>
+            <ul id="appointmentList">
+                <!-- Aquí se cargarán las citas programadas -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="js/agendapaciente.js"></script>
+</body>
+</html>

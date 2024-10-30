@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Psicólogo - Clínica de Salud Mental</title>
+    <link rel="stylesheet" href="css/perfilpsicologo.css">
+</head>
+<body>
+    <div class="header">
+        <h1>¡Hola!, Dr. Juan Pérez</h1>
+        <a href="#" class="logout">Cerrar sesión</a>
+    </div>
+    
+    <div class="container">
+        <div class="profile-info">
+            <h2>Información Personal</h2>
+            
+            <!-- Área de foto de perfil -->
+            <div class="profile-photo">
+                <img id="profileImage" src="default-photo.png" alt="Foto del Psicólogo">
+                <input type="file" id="uploadPhoto" accept="image/*" onchange="previewImage(event)">
+                <button onclick="document.getElementById('uploadPhoto').click()">Subir Foto</button>
+            </div>
+
+            <!-- Detalles del psicólogo -->
+            <p><strong>Nombre Completo:</strong> Juan Manuel Pérez Ramírez</p>
+            <p><strong>Especialidad:</strong> Psicología Clínica</p>
+            <p><strong>Teléfono:</strong> +56 9 87654321</p>
+            <p><strong>Correo Electrónico:</strong> juanperez@gmail.com</p>
+            
+        </div>
+
+        <div class="summary">
+            <h2>Resumen</h2>
+            <p><strong>Pacientes Activos:</strong> 25</p>
+            <p><strong>Próximas Citas:</strong> 5</p>
+            <p><strong>Certificados Emitidos:</strong> 8</p>
+            <p><strong>Documentos Pendientes:</strong> 3</p>
+        </div>
+
+        <div class="actions">
+            <a href="pacientes.html"><button onclick="viewPatients()">Ver Pacientes</button></a>
+            <a href="agenda.html"><button onclick="viewAgenda()">Ver Agenda</button></a>
+            <button onclick="viewCertificates()">Ver Certificados</button>
+            <button onclick="viewDocuments()">Ver Documentos</button>
+        </div>
+    </div>
+
+    <script src="js/perfilpsicologo.js"></script>
+</body>
+</html>

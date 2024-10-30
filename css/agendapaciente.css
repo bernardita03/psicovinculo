@@ -1,0 +1,139 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-image: url("../img/v1016-a-08.jpg");
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+header .menu a {
+    color: #20a4f3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de agendar cita */
+.schedule-appointment {
+    margin-bottom: 20px;
+}
+
+.schedule-appointment h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: #555;
+}
+
+form select, form input[type="date"], form input[type="time"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+form button.btn {
+    background-color: #20a4f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button.btn:hover {
+    background-color: #178abf;
+}
+
+/* Sección de citas programadas */
+.cancel-appointment {
+    margin-top: 20px;
+}
+
+.cancel-appointment h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#appointmentList {
+    list-style: none;
+    padding: 0;
+}
+
+#appointmentList li {
+    background-color: #e3f2fd;
+    border: 1px solid #bbdefb;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.cancel-btn {
+    background-color: #f28b82;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #e57373;
+}

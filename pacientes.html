@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="css/pacientes.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pacientes</h1>
+        <a href="perfil.html" class="logout">Cerrar sesión</a>
+    </div>
+
+    <div class="container">
+        <table class="patients-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Diagnóstico</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matías Pérez</td>
+                    <td>27</td>
+                    <td>Depresión leve</td>
+                    <td>
+                        <button class="btn" onclick="verFicha('Matías Pérez')">Ver Ficha</button>
+                        <button class="btn" onclick="verCitas('Matías Pérez')">Ver Citas</button>
+                        <button class="btn" onclick="verDiagnostico('Matías Pérez')">Ver Diagnóstico</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Camila Gómez</td>
+                    <td>34</td>
+                    <td>Ansiedad Generalizada</td>
+                    <td>
+                        <button class="btn" onclick="verFicha('Camila Gómez')">Ver Ficha</button>
+                        <button class="btn" onclick="verCitas('Camila Gómez')">Ver Citas</button>
+                        <button class="btn" onclick="verDiagnostico('Camila Gómez')">Ver Diagnóstico</button>
+                    </td>
+                </tr>
+                <!-- Más pacientes aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/pacientes.js"></script>
+</body>
+</html>

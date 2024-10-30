@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados Emitidos</title>
+    <link rel="stylesheet" href="css/certificadopaciente.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Certificados Emitidos</h1>
+        <div class="certificates-list">
+            <!-- Ejemplo de un certificado -->
+            <div class="certificate-item">
+                <h2>Certificado de Tratamiento</h2>
+                <p>Fecha de emisión: 2024-10-20</p>
+                <p>Psicólogo: Dr. Juan Pérez</p>
+                <a href="pdf/Certificado de Atención Psicológica.pdf" download="Certificado_Tratamiento.pdf">
+                    <button>Descargar PDF</button>
+                </a>
+            </div>
+            
+            <!-- Puedes duplicar este bloque para agregar más certificados -->
+            <div class="certificate-item">
+                <h2>Certificado de Asistencia</h2>
+                <p>Fecha de emisión: 2024-09-15</p>
+                <p>Psicólogo: Dra. María Gómez</p>
+                <button onclick="downloadCertificate()">Descargar PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/certificadopaciente.js"></script>
+</body>
+</html>

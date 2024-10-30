@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPsicovinculo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="profile-header">
+        <img src="img/logohorizontal.png" alt="Logo" class="logo" style="width: 330px; height: 70px;">
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>¡Hola!, Matías Peréz</h1>
+            <div class="menu">
+                <a href="#" id="logout">Cerrar sesión</a>
+            </div>
+        </header>
+
+        <section class="profile-summary">
+            <div class="personal-info">
+                <h2>Información Personal</h2>
+                <p><strong>Nombre Completo:</strong> Matías Reinaldo Peréz Silva</p>
+                <p><strong>RUT:</strong> 19.700.237-9</p>
+                <p><strong>Edad:</strong> 27</p>
+                <p><strong>Fecha de Nacimiento:</strong> 17 de octubre de 1997</p>
+                <p><strong>Domicilio:</strong>  Volcán Peteroa 1682, Puente Alto</p>
+                <p><strong>Número de Teléfono:</strong> +56 9 88052588</p>
+                <p><strong>Correo Electrónico:</strong> matiasreinaldop@gmail.com</p>
+                <p><strong>Contacto de Emergencia:</strong> Bernardita Muñoz (pareja)</p>
+                <p><strong>Número de Emergencia:</strong> +56 9 61185840</p>
+            </div>
+
+            <div class="summary-content">
+                <h2>Mi Resumen</h2>
+                <p><strong>Próximas Citas:</strong> <span id="upcoming-appointments">2</span></p>
+                <p><strong>Diagnóstico:</strong> <span id="diagnosis">Depresión leve</span></p>
+                <p><strong>Recetas:</strong> <span id="prescriptions">4</span></p>
+                <p><strong>Actividades Solicitadas:</strong> <span id="activities">3</span></p>
+            </div>
+
+            <div class="profile-photo">
+                <img id="profileImage" src="img/default-profile.png" alt="Foto del Paciente">
+                <input type="file" id="uploadPhoto" accept="image/*">
+                <label for="uploadPhoto" class="upload-button">Subir Foto</label>
+            </div>
+        </section>
+
+        <section class="actions">
+            <h2>Acciones</h2>
+            <div class="action-cards">
+                <div class="card">
+                    <a href="registro.html">Actualizar Datos</a>
+                </div>
+                <div class="card">
+                    <a href="ver-citas.html">Ver Próximas Citas</a>
+                </div>
+                <div class="card">
+                    <a href="agendar-cancelar-citas.html">Agendar o Cancelar Citas</a>
+                </div>
+                <div class="card">
+                    <a href="ver-diagnostico.html">Ver Diagnóstico</a>
+                </div>
+                <div class="card">
+                    <a href="ver-recetas.html">Ver Recetas</a>
+                </div>
+                <div class="card">
+                    <a href="ver-actividades.html">Ver Actividades</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
