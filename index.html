@@ -3,76 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPsicovinculo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Red PsicoVínculo - Home</title>
 </head>
 <body>
-    <div class="profile-header">
-        <img src="img/logohorizontal.png" alt="Logo" class="logo" style="width: 330px; height: 70px;">
-    </div>
-    
-    <div class="container">
-        <header>
-            <h1>¡Hola!, Matías Peréz</h1>
-            <div class="menu">
-                <a href="#" id="logout">Cerrar sesión</a>
-            </div>
-        </header>
+   <header>
+        <div class="menu">
+            <a href="home.html" class="logo">
+                <img src="img/logo.png" class="menu-icono" height="60" alt="Logo Red PsicoVínculo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="psicoterapia.html">Psicoterapia</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contactanos.html">Contacto</a></li>
+                    <li><a href="iniciar_sesion.html">Ingresa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section class="profile-summary">
-            <div class="personal-info">
-                <h2>Información Personal</h2>
-                <p><strong>Nombre Completo:</strong> Matías Reinaldo Peréz Silva</p>
-                <p><strong>RUT:</strong> 19.700.237-9</p>
-                <p><strong>Edad:</strong> 27</p>
-                <p><strong>Fecha de Nacimiento:</strong> 17 de octubre de 1997</p>
-                <p><strong>Domicilio:</strong>  Volcán Peteroa 1682, Puente Alto</p>
-                <p><strong>Número de Teléfono:</strong> +56 9 88052588</p>
-                <p><strong>Correo Electrónico:</strong> matiasreinaldop@gmail.com</p>
-                <p><strong>Contacto de Emergencia:</strong> Bernardita Muñoz (pareja)</p>
-                <p><strong>Número de Emergencia:</strong> +56 9 61185840</p>
-            </div>
+    <!-- Sección "Quiénes Somos" -->
+    <section class="about-us">
+        <h1>¿Quiénes Somos?</h1>
+        <p>Somos un equipo de psicólogos apasionados por el bienestar emocional. Creemos que cada persona es única y merece un enfoque individualizado para su salud mental. Nuestra diversidad de especialidades nos permite ofrecer un apoyo integral adaptado a las necesidades de cada usuario. En Red PsicoVínculo, creemos en la conexión como base del bienestar emocional.</p>
+        <p>Nuestro enfoque centrado en el usuario permite que cada persona reciba el apoyo que necesita desde la comodidad de su hogar. A través de sesiones de terapia personalizadas y recursos accesibles, trabajamos juntos para construir vínculos que promuevan la salud mental y el crecimiento personal. Conectamos a nuestros usuarios con profesionales comprometidos que están listos para acompañarlos en cada paso del camino hacia una vida más plena.</p>
+    </section>
 
-            <div class="summary-content">
-                <h2>Mi Resumen</h2>
-                <p><strong>Próximas Citas:</strong> <span id="upcoming-appointments">2</span></p>
-                <p><strong>Diagnóstico:</strong> <span id="diagnosis">Depresión leve</span></p>
-                <p><strong>Recetas:</strong> <span id="prescriptions">4</span></p>
-                <p><strong>Actividades Solicitadas:</strong> <span id="activities">3</span></p>
+    <!-- Sección de Tarjetas -->
+    <section class="tarjetas-container">
+        <div class="tarjeta">
+            <img src="img/fond.jpg" alt="¿Qué hacemos?" class="tarjeta-img">
+            <div class="tarjeta-content">
+                <h3>¿Qué hacemos?</h3>
+                <p>Ofrecemos sesiones de terapia personalizadas y recursos accesibles, diseñados para promover la salud mental y el crecimiento personal. Nuestro objetivo es ayudarte a construir vínculos significativos, facilitando así un camino hacia una vida más plena.</p>
             </div>
+        </div>
 
-            <div class="profile-photo">
-                <img id="profileImage" src="img/default-profile.png" alt="Foto del Paciente">
-                <input type="file" id="uploadPhoto" accept="image/*">
-                <label for="uploadPhoto" class="upload-button">Subir Foto</label>
+        <div class="tarjeta">
+            <img src="img/fond.jpg" alt="Nuestro enfoque" class="tarjeta-img">
+            <div class="tarjeta-content">
+                <h3>Nuestro enfoque</h3>
+                <p>Nuestro enfoque centrado en el usuario coloca tus necesidades y experiencias en el centro de nuestro trabajo. Te acompañamos en cada etapa, asegurando que te sientas escuchado, comprendido y apoyado.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="actions">
-            <h2>Acciones</h2>
-            <div class="action-cards">
-                <div class="card">
-                    <a href="registro.html">Actualizar Datos</a>
-                </div>
-                <div class="card">
-                    <a href="ver-citas.html">Ver Próximas Citas</a>
-                </div>
-                <div class="card">
-                    <a href="agendar-cancelar-citas.html">Agendar o Cancelar Citas</a>
-                </div>
-                <div class="card">
-                    <a href="ver-diagnostico.html">Ver Diagnóstico</a>
-                </div>
-                <div class="card">
-                    <a href="ver-recetas.html">Ver Recetas</a>
-                </div>
-                <div class="card">
-                    <a href="ver-actividades.html">Ver Actividades</a>
-                </div>
+        <div class="tarjeta">
+            <img src="img/fond.jpg" alt="Nuestro Compromiso" class="tarjeta-img">
+            <div class="tarjeta-content">
+                <h3>Nuestro compromiso</h3>
+                <p>Valoramos la importancia de la conexión emocional y buscamos crear un ambiente de confianza y respeto. Estamos comprometidos en ofrecerte el mejor apoyo en cada etapa de tu proceso.</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <footer>
+        
+        <div class="container">
+            <p>&copy; 2024 Red PsicoVínculo. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/redpsicovinculo" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61566714517252" target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.tiktok.com/@psicovinculo" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:Redpsicovinculo@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
