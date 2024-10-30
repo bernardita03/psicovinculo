@@ -233,7 +233,7 @@ footer .container p {
     color: #FF69B4;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .contact-info {
         flex-direction: column;
